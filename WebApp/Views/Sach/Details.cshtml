@@ -1,0 +1,58 @@
+﻿@model prjModel.Sach
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sach</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenSach)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenSach)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NamXB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NamXB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhaXB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhaXB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaLoai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaLoai)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaSach }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
